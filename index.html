@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dangle Diaries | Elegant Jewellery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#ffe6da;
+      color:#333;
+    }
+
+    /* HEADER */
+    header{
+      background:#ffffff;
+      padding:15px 25px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    .logo-area{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo-area img{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .logo-area h1{
+      margin:0;
+      color:#b85c7a;
+      font-size:26px;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      margin-left:18px;
+      text-decoration:none;
+      color:#555;
+      font-weight:600;
+    }
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(to right,#f7c1d9,#dbeeff);
+      text-align:center;
+      padding:70px 20px;
+    }
+
+    .hero h2{
+      font-size:36px;
+      color:#b85c7a;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:18px;
+    }
+
+    /* SECTION */
+    .section{
+      padding:50px 25px;
+      text-align:center;
+    }
+
+    .section h2{
+      color:#b85c7a;
+      margin-bottom:30px;
+      font-size:30px;
+    }
+
+    /* PRODUCTS */
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fff;
+      padding:22px;
+      border-radius:15px;
+      box-shadow:0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    .card h3{
+      color:#b85c7a;
+      margin-bottom:10px;
+    }
+
+    .card p{
+      font-size:14px;
+    }
+
+    /* ORDER BUTTONS */
+    .order-buttons{
+      margin-top:15px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .btn{
+      padding:10px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:600;
+    }
+
+    .btn-site{
+      background:#b85c7a;
+      color:white;
+    }
+
+    .btn-wa{
+      background:#25D366;
+      color:white;
+    }
+
+    .btn-ig{
+      background:#E1306C;
+      color:white;
+    }
+
+    /* ORDER FORM */
+    form{
+      max-width:400px;
+      margin:0 auto;
+      background:#fff;
+      padding:25px;
+      border-radius:14px;
+      box-shadow:0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    input, textarea{
+      width:100%;
+      padding:10px;
+      margin:8px 0;
+      border-radius:6px;
+      border:1px solid #ccc;
+    }
+
+    button.submit{
+      background:#b85c7a;
+      color:white;
+      border:none;
+      padding:12px;
+      width:100%;
+      border-radius:8px;
+      font-size:16px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#333;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:14px 18px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-area">
+    <!-- Replace logo.png with your logo file -->
+    <img src="logo.png" alt="Dangle Diaries Logo">
+    <h1>Dangle Diaries</h1>
+  </div>
+  <nav>
+    <a href="#collection">Collection</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Elegant Jewellery for Every Occasion</h2>
+  <p>Wedding • Festive • Daily Wear</p>
+</section>
+
+<section class="section" id="collection">
+  <h2>Our Jewellery Collection</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <h3>Earrings</h3>
+      <p>Classic & elegant designs</p>
+      <div class="order-buttons">
+        <button class="btn btn-site">Order via Website</button>
+        <a class="btn btn-wa" href="https://wa.me/919826438831">Order on WhatsApp</a>
+        <a class="btn btn-ig" href="https://instagram.com/dangle_diaries">Order on Instagram</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Floral Earrings</h3>
+      <p>Soft, feminine & graceful</p>
+      <div class="order-buttons">
+        <button class="btn btn-site">Order via Website</button>
+        <a class="btn btn-wa" href="https://wa.me/919826438831">Order on WhatsApp</a>
+        <a class="btn btn-ig" href="https://instagram.com/dangle_diaries">Order on Instagram</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Anti-Tarnish Earrings</h3>
+      <p>Long-lasting shine</p>
+      <div class="order-buttons">
+        <button class="btn btn-site">Order via Website</button>
+        <a class="btn btn-wa" href="https://wa.me/919826438831">Order on WhatsApp</a>
+        <a class="btn btn-ig" href="https://instagram.com/dangle_diaries">Order on Instagram</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Festive Look</h3>
+      <p>Perfect for weddings & celebrations</p>
+      <div class="order-buttons">
+        <button class="btn btn-site">Order via Website</button>
+        <a class="btn btn-wa" href="https://wa.me/919826438831">Order on WhatsApp</a>
+        <a class="btn btn-ig" href="https://instagram.com/dangle_diaries">Order on Instagram</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Bracelets</h3>
+      <p>Minimal yet classy</p>
+      <div class="order-buttons">
+        <button class="btn btn-site">Order via Website</button>
+        <a class="btn btn-wa" href="https://wa.me/919826438831">Order on WhatsApp</a>
+        <a class="btn btn-ig" href="https://instagram.com/dangle_diaries">Order on Instagram</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="order">
+  <h2>Order via Website</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea placeholder="Product & Address" required></textarea>
+    <button class="submit">Submit Order</button>
+  </form>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact & Social</h2>
+  <p>📞 +91 98264 38831 | +91 99818 66466</p>
+  <p>📸 Instagram: <strong>@dangle_diaries</strong></p>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/919826438831">💬 WhatsApp</a>
+
+<footer>
+  © 2026 Dangle Diaries | Social Commerce Jewellery Brand
+</footer>
+
+</body>
+</html>
