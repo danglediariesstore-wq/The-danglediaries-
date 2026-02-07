@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dangle Diaries | Every Dangle Has a Story</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg,#fde6ef,#eef5ff);
+      color: #1c1c1c;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 5px 0;
+      color: #f3008c;
+    }
+    header p {
+      margin: 0;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fef5f8;
+    }
+    .hero h2 {
+      font-size: 32px;
+      color: #f3008c;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    /* Products Section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .product-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #f3008c;
+    }
+    .product-card p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .product-card button {
+      padding: 10px 20px;
+      background: #f3008c;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .product-card button:hover {
+      background: #c20073;
+    }
+
+    /* Order Section */
+    .order-section {
+      background: #fef5f8;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .order-section h2 {
+      font-size: 28px;
+      color: #f3008c;
+      margin-bottom: 20px;
+    }
+    .order-section p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .order-section a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 10px 20px;
+      background: #1c1c1c;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .order-section a:hover {
+      background: #f3008c;
+    }
+
+    /* Footer */
+    footer {
+      background: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media(max-width:768px){
+      .products { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header with Logo -->
+<header>
+  <img src="logo.png" alt="DD Logo">
+  <h1>DANGLE DIARIES</h1>
+  <p>Every Dangle Has a Story</p>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h2>Elegant Jewelry for Every Occasion</h2>
+  <p>Introducing our first collection. Order via website, WhatsApp or Instagram!</p>
+</section>
+
+<!-- Products Section -->
+<section class="products">
+  <!-- Earrings -->
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x250.png?text=Earrings" alt="Earrings">
+    <h3>Earrings</h3>
+    <p>Elegant everyday wear</p>
+    <button onclick="addToCart('Earrings')">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x250.png?text=Korean+Earrings" alt="Korean Earrings">
+    <h3>Korean Earrings</h3>
+    <p>Trendy & stylish</p>
+    <button onclick="addToCart('Korean Earrings')">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x250.png?text=Anti-Tarnish+Earrings" alt="Anti-Tarnish Earrings">
+    <h3>Anti-Tarnish Earrings</h3>
+    <p>Lasting shine</p>
+    <button onclick="addToCart('Anti-Tarnish Earrings')">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x250.png?text=Bracelets" alt="Bracelets">
+    <h3>Bracelets</h3>
+    <p>Perfect for festive looks</p>
+    <button onclick="addToCart('Bracelets')">Add to Cart</button>
+  </div>
+</section>
+
+<!-- Order Section -->
+<section class="order-section">
+  <h2>Place Your Order</h2>
+  <p>Order via Website, WhatsApp, or Instagram</p>
+  <a href="https://wa.me/919826438831?text=Hello%20Dangle%20Diaries!%20I%20want%20to%20place%20an%20order." target="_blank">WhatsApp</a>
+  <a href="https://www.instagram.com/dangle_diaries/" target="_blank">Instagram</a>
+  <a href="https://the-danglediaries.vercel.app/" target="_blank">Website</a>
+  <p style="margin-top:15px;">Cash on Delivery Available 💳</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>📞 +91 98264 38831 | +91 99818 66466</p>
+  <p>© 2026 Dangle Diaries</p>
+</footer>
+
+<script>
+function addToCart(product){
+  alert(`You added "${product}" to your order! Please confirm via WhatsApp / Instagram.`);
+}
+</script>
+
+</body>
+</html>
